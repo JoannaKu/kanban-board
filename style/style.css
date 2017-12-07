@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 50px;
+}
+.ui-sortable {
+  min-height: 80px;
+}
+.btn-delete {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  border: 0;
+  color: white;
+  background-color: #e55354;
+}
+/* BOARD */
+.board h1 {
+  color: #286090;
+  font-size: 45px;
+  text-align: center;
+  text-shadow: 0 2px 3px;
+}
+.board p {
+  color: #286090;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+.board h2 {
+  font-size: 25px;
+  text-align: center;
+  color: #286090;
+}
+.column-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.board .create-column {
+  background-color: #4caf50;
+  font-size: 16px;
+  color: white;
+  padding: 3px;
+  margin-left: 7px;
+  margin-bottom: 45px;
+  width: 110px;
+}
+.board .card-description {
+  color: black;
+  text-align: left;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+
+/* COLUMN */
+.column {
+  order: 1;
+  min-width: 300px;
+  min-height: 50vh;
+  background-color: #dee3e5;;
+  margin-left: 8px;
+  list-style: none;
+  position: relative;
+}
+.column-add-card {
+  cursor: pointer;
+  margin: 5px 8px;
+  display: block;
+  background-color: #4caf50;
+  font-size: 13px;
+  color: white;
+  padding: 3px;
+  width: 100px;
+  margin-bottom: 30px;
+}
+.column-card-list {
+  list-style-type: none;
+  padding: 15px;
+  text-align: left;
+  border: 2px dotted grey;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* STYLE KARTY */
+.card {
+  box-sizing: border-box;
+  display: block;
+  height: 60px;
+  margin-bottom: 5px;
+  padding: 4px;
+  overflow: hidden;
+  position: relative;
+}
+.card-list {
+  list-style: none;
+  margin: 5px;
+  padding: 0px;
+}
+.card-description {
+  margin: 2px 0;
+}
+.card-placeholder {
+  box-sizing: border-box;
+  display: block;
+  height: 60px;
+  margin-bottom: 5px;
+  border: 2px solid lightgrey;
+  background-color: lightblue;
+}
